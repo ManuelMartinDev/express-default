@@ -7,7 +7,7 @@ config();
 
 const app = express();
 
-app.set("PORT", 4000 | process.env.PORT);
+app.set("PORT",  process.env.PORT || 4000);
 
 app.use("/", indexRouter);
 
